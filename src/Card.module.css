@@ -1,4 +1,42 @@
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url(birds.svg) no-repeat;*/
+
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+    z-index: 50;
+}
+.coc{
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 150px;
+}
+.bos{
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
+.images {
+    position: relative;
+    width: 100%; /* for IE 6 */
+}
+
+
+
+
 .cardContainer {
+    position: relative;
+    z-index: 1;
     align-items: center;
     width: 284px;
     height: 444px;
@@ -9,34 +47,9 @@
     justify-content: space-around;
     color: #282c34;
     flex-direction: column;
-   /* transition: transform 3s linear;
-    transform-origin: right center;*/
-/*    transform: translateZ(20px)scaleY(0);*/
- /*   transform-style: preserve-3d;
-    position: relative;
-    transition: 05s;
-    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-
-    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-
-    -webkit-transition: all 0.5s ease-out;
-
-    -moz-transition: all 0.5s ease;
-
-    -o-transition: all 0.5s ease;*/
 
 }
-.cardContainer:hover {
-/*    -webkit-transform: rotate(-7deg);
 
-    -moz-transform: rotate(-7deg);
-
-    -o-transform: rotate(-7deg);*/
-
-
-}
 
 .image {
     width: 167px;
@@ -49,10 +62,12 @@
     background-position: center;
     position: relative;
 }
-.titleCard{
+
+.titleCard {
     text-align: center;
 }
-.titleCard span{
+
+.titleCard span {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: bold;
