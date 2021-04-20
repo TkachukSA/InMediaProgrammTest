@@ -1,7 +1,5 @@
 import React, {Suspense} from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import "./styles.css";
 import {Canvas} from "@react-three/fiber";
 import {useLoader} from "@react-three/fiber";
 import {Environment, OrbitControls} from "@react-three/drei";
@@ -11,17 +9,18 @@ import {FBXLoader} from "three/examples/jsm/loaders/FBXLoader";
 const Scene = () => {
     const fbx = useLoader(FBXLoader, "Poimandres.fbx");
 
-    return <primitive object={fbx} scale={0.05}/>;
+    return <primitive object={fbx}   scale={0.008}/>;
 };
 
-export default function App() {
+export default function Fox() {
     return (
         <div className="App">
-            <Canvas>
+            <Canvas >
+                <color attach="background" args={["red"]} />
                 <Suspense fallback={null}>
                     <Scene/>
-                    <OrbitControls/>
-                    <Environment preset="sunset" background/>
+                    <meshStandardMaterial color="hotpink" />
+                    <OrbitControls  onClick={(e) =>  alert('click')}/>
                 </Suspense>
             </Canvas>
         </div>

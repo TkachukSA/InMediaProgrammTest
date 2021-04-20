@@ -1,15 +1,33 @@
-import React, {Suspense} from 'react';
-import './App.css';
-import Fox from "./Fox";
-
-
-function Conytainer() {
-
-    return (
-       <div>
-
-       </div>
-    );
+.flexContainer {
+    min-height: 100vh;
+    background-color: #d7d7ea;
 }
 
-export default Conytainer;
+.container{
+    padding-top: 40px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.flexitem {
+    width: 80%;
+    display: flex;
+    /* margin-top: 30px; */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.preject {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e515e5;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}

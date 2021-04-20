@@ -1,0 +1,63 @@
+.cardContainer {
+    align-items: center;
+    width: 284px;
+    height: 444px;
+    background-color: #61dafb;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-around;
+    color: #282c34;
+    flex-direction: column;
+   /* transition: transform 3s linear;
+    transform-origin: right center;*/
+/*    transform: translateZ(20px)scaleY(0);*/
+ /*   transform-style: preserve-3d;
+    position: relative;
+    transition: 05s;
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+
+    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+
+    -webkit-transition: all 0.5s ease-out;
+
+    -moz-transition: all 0.5s ease;
+
+    -o-transition: all 0.5s ease;*/
+
+}
+.cardContainer:hover {
+/*    -webkit-transform: rotate(-7deg);
+
+    -moz-transform: rotate(-7deg);
+
+    -o-transform: rotate(-7deg);*/
+
+
+}
+
+.image {
+    width: 167px;
+    height: 73px;
+    margin-top: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.titleCard{
+    text-align: center;
+}
+.titleCard span{
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: #191B1D;
+}
