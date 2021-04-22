@@ -9,15 +9,13 @@ import birdseEnd from './asses/image/birdseEnd.svg'
 
 export default function Card() {
 
-    return (<div className={style.test}>
-            <div className={style.coc}>
-                <img src={birds}/>
-                <img src={birdseEnd}/>
+    return (<div className={style.container}>
+            <div className={style.carbBackgroundContainer}>
+                <img src={birds} alt={'Birds'}/>
+                <img src={birdseEnd} alt={'Birds'}/>
             </div>
-
-            <div className={style.bos}>
+            <div className={style.card}>
                 <Tilt className="Tilt" options={{max: 45, reverse: true, speed: 1000}}>
-
                     <div className={style.cardContainer}>
                         <div className={style.image}>
                             <img src={union}/>
@@ -30,12 +28,9 @@ export default function Card() {
                                 {'Кнопка'}
                             </SuperButton>
                         </div>
-
-
                     </div>
                 </Tilt>
             </div>
-
         </div>
     );
 }

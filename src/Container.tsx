@@ -6,6 +6,7 @@ import Card from "./Card";
 import Vr from "./Vector67.png";
 import birds from './asses/image/birds.svg'
 import birdsEnd from './asses/image/birdseEnd.svg'
+import Form from "./Form";
 
 
 function Conytainer() {
@@ -32,7 +33,7 @@ function Conytainer() {
                 <div className={style.flexitem}>
                     <div className={style.preject}><Modela/></div>
                     <div className={style.preject}><Card/></div>
-                    <div  className={style.preject}>ajlr</div>
+                    <div className={style.preject}><Form/></div>
                     <div className={style.preject}>ajlr</div>
                 </div>
             </div>

@@ -1,0 +1,104 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item {
+
+    background-color: #61dafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    border-top: 5px solid rgba(253, 209, 112, 1);
+    align-items: center;
+    width: 504px;
+    height: 608px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-around;
+    color: #282c34;
+    flex-direction: column;
+}
+
+.form h2 {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 68px;
+    text-align: center;
+    margin: 0 0 0 0;
+
+}
+
+.input {
+    padding-left: 10px;
+    font-size: 20px;
+    width: 440px;
+    height: 25px;
+    outline: none;
+    border: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid black;
+}
+
+.error {
+    padding-left: 10px;
+    font-size: 20px;
+    width: 440px;
+    height: 25px;
+    outline: none;
+    border: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(235, 87, 87, 1);
+}
+
+.error::placeholder {
+    color: rgba(235, 87, 87, 1);;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(235, 87, 87, 1);;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+.selected select {
+    color: #e9ef26;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; /* Remove default arrow */
+    background-color: red; /* Add custom arrow */
+}
+
+.selected {
+    outline: none;
+    width: 440px;
+    height: 25px;
+    border: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+.selected:hover{
+    color: firebrick;
+    background-color: bisque;
+}
+.sss li  {
+    background-color: #61dafb;
+    color: #1ed729;
+    width: 300px;
+}
+
+
+
