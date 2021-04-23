@@ -1,16 +1,15 @@
-import React, {Suspense} from 'react';
+import React from 'react';
 import './App.css';
-import Conytainer from "./Container";
+import Container from "./Container";
 
 
-function App() {
+export default function App() {
 
     return (
         <div className="App">
-
-            <Conytainer/>
+            <Container/>
         </div>
     );
 }
 
-export default App;
+

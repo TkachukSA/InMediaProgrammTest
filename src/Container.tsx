@@ -1,45 +1,22 @@
-import React, {DetailedHTMLProps, HTMLAttributes} from 'react';
+import React from 'react';
 import style from './Container.module.css'
-import Fox from "./Fox";
-import Modela from "./Fox2";
-import Card from "./Card";
-import Vr from "./Vector67.png";
-import birds from './asses/image/birds.svg'
-import birdsEnd from './asses/image/birdseEnd.svg'
-import Form from "./Form";
+import Card from "./components/interactive_card/Card";
+import FormSelection from "./components/form/FormSelection";
+import FormTabs from "./components/form_tabs/FormTabs";
+import ModelFox from './components/model/ModelFox';
 
 
-function Conytainer() {
-
-    const Image = {
-        color: 'blue',
-        backgroundImage: `url(${birdsEnd})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'left',
-        backgroundSize: '120px',
-    };
-    const br = {
-        color: 'blue',
-        backgroundImage: `url(${birds})`,
-        backgroundRepeat: 'no-repeat',
-        size: '30px',
-
-    };
-
-
+export default function Container() {
     return (
         <div className={style.flexContainer}>
             <div className={style.container}>
                 <div className={style.flexitem}>
-                    <div className={style.preject}><Modela/></div>
-                    <div className={style.preject}><Card/></div>
-                    <div className={style.preject}><Form/></div>
-                    <div className={style.preject}>ajlr</div>
+                    <div className={style.project}><ModelFox/></div>
+                    <div className={style.project}><Card/></div>
+                    <div className={style.project}><FormSelection/></div>
+                    <div className={style.project}><FormTabs/></div>
                 </div>
             </div>
-
         </div>
     );
 }
-
-export default Conytainer;

@@ -4,12 +4,13 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: #E5E5E5;
+    background: #B7BABE;
     position: relative;
     z-index: 50;
 
 }
-.carbBackgroundContainer{
+
+.carbBackgroundContainer {
     position: relative;
     z-index: 1000;
     display: flex;
@@ -17,7 +18,8 @@
     width: 100%;
     margin-bottom: 150px;
 }
-.card{
+
+.card {
     position: absolute;
     z-index: 1;
 }

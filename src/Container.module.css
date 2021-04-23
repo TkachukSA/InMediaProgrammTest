@@ -1,6 +1,6 @@
 .flexContainer {
     min-height: 100vh;
-    background-color: #d7d7ea;
+    background: #B7BABE;
 }
 
 .container {
@@ -24,14 +24,13 @@
     /*justify-content: space-between;*/
 }
 
-.preject {
+.project {
     border: 1px solid black;
     width: 600px;
     height: 650px;
     display: flex;
     flex-direction: column;
-    background-color: #E5E5E5;
+    background: #B7BABE;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }

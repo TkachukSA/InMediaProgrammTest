@@ -1,5 +1,5 @@
-import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent, useEffect} from "react";
-import style from './Form.module.css'
+import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent} from "react";
+
 
 
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
@@ -19,16 +19,22 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
 
 
 ) => {
-    const mappedOptions = options && options.map((o, i) => <option key={i}>{o}</option>)
+    const componentPng = {
+        color: 'red',
+        backgroundImage: 'red',
+    };
+    const mappedOptions = options && options.map((o, i) => <option style={componentPng} key={i}>{o}</option>)
+
 
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
         onChangeOption && onChangeOption(e.currentTarget.value)
     }
 
+
     return (
-        <select placeholder={'gitfitrdir'} className={style.dropdown} onChange={onChangeCallback} {...restProps}>
-            <option  value='1' disabled>Select</option>
+        <select placeholder={'gitfitrdir'} onChange={onChangeCallback} {...restProps}>
+            <option style={componentPng} value='1' disabled>Select</option>
             {mappedOptions}
         </select>
     );

@@ -2,12 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-family: 'Manrope', sans-serif;
 }
 
 .item {
-
-    background-color: #61dafb;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +23,13 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 570px) {
+    .form {
+        width: 320px;
+    }
+
+}
+
 .form h2 {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
@@ -33,7 +38,6 @@
     line-height: 68px;
     text-align: center;
     margin: 0 0 0 0;
-
 }
 
 .input {
@@ -46,6 +50,14 @@
     border-bottom: 1px solid black;
 }
 
+@media screen and (max-width: 570px) {
+    .input {
+        width: 300px;
+    }
+
+
+}
+
 .error {
     padding-left: 10px;
     font-size: 20px;
@@ -54,6 +66,14 @@
     outline: none;
     border: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgba(235, 87, 87, 1);
+}
+
+@media screen and (max-width: 570px) {
+    .error {
+        width: 300px;
+    }
+
+
 }
 
 .error::placeholder {
@@ -68,12 +88,21 @@
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: red;
 }
+
 .selected select {
     color: #e9ef26;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none; /* Remove default arrow */
-    background-color: red; /* Add custom arrow */
+    appearance: none;
+    background-color: red;
+}
+
+@media screen and (max-width: 570px) {
+    .selected {
+        width: 300px;
+    }
+
+
 }
 
 .selected {
@@ -84,21 +113,60 @@
     border-bottom: 1px solid black;
 }
 
+@media screen and (max-width: 570px) {
+    .selected {
+        width: 300px;
+    }
 
 
-
-
-
-
-.selected:hover{
-    color: firebrick;
-    background-color: bisque;
-}
-.sss li  {
-    background-color: #61dafb;
-    color: #1ed729;
-    width: 300px;
 }
 
+.textarea {
+    padding-left: 10px;
+    font-size: 20px;
+    width: 440px;
+    min-height: 25px;
+    max-height: max-content;
+    outline: none;
+    border: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid black;
+    overflow: auto;
+    resize: inherit;
+    font-family: 'Manrope', sans-serif;
+}
+
+@media screen and (max-width: 570px) {
+    .textarea {
+        width: 300px;
+    }
 
 
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid #F4F4F4;
+    box-sizing: border-box;
+}
+
+.label img {
+    width: 42px;
+    height: 30px;
+}
+
+.file {
+    display: none;
+}
+
+.filesform {
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+}
