@@ -1,27 +1,28 @@
 {
   "files": {
     "main.css": "/InMediaProgrammTest/static/css/main.a51da1bd.chunk.css",
-    "main.js": "/InMediaProgrammTest/static/js/main.6e2d530a.chunk.js",
-    "main.js.map": "/InMediaProgrammTest/static/js/main.6e2d530a.chunk.js.map",
+    "main.js": "/InMediaProgrammTest/static/js/main.afa6edee.chunk.js",
+    "main.js.map": "/InMediaProgrammTest/static/js/main.afa6edee.chunk.js.map",
     "runtime-main.js": "/InMediaProgrammTest/static/js/runtime-main.a28ef768.js",
     "runtime-main.js.map": "/InMediaProgrammTest/static/js/runtime-main.a28ef768.js.map",
-    "static/js/2.80a17425.chunk.js": "/InMediaProgrammTest/static/js/2.80a17425.chunk.js",
-    "static/js/2.80a17425.chunk.js.map": "/InMediaProgrammTest/static/js/2.80a17425.chunk.js.map",
+    "static/js/2.20c5fe73.chunk.js": "/InMediaProgrammTest/static/js/2.20c5fe73.chunk.js",
+    "static/js/2.20c5fe73.chunk.js.map": "/InMediaProgrammTest/static/js/2.20c5fe73.chunk.js.map",
     "static/js/3.004839a2.chunk.js": "/InMediaProgrammTest/static/js/3.004839a2.chunk.js",
     "static/js/3.004839a2.chunk.js.map": "/InMediaProgrammTest/static/js/3.004839a2.chunk.js.map",
     "index.html": "/InMediaProgrammTest/index.html",
     "static/css/main.a51da1bd.chunk.css.map": "/InMediaProgrammTest/static/css/main.a51da1bd.chunk.css.map",
-    "static/js/2.80a17425.chunk.js.LICENSE.txt": "/InMediaProgrammTest/static/js/2.80a17425.chunk.js.LICENSE.txt",
+    "static/js/2.20c5fe73.chunk.js.LICENSE.txt": "/InMediaProgrammTest/static/js/2.20c5fe73.chunk.js.LICENSE.txt",
     "static/media/Group164.14d32fe0.svg": "/InMediaProgrammTest/static/media/Group164.14d32fe0.svg",
     "static/media/SuperButton.module.css": "/InMediaProgrammTest/static/media/Vector.9a16c2c4.svg",
     "static/media/FormTabs.module.css": "/InMediaProgrammTest/static/media/uparrow.22ebc020.svg",
     "static/media/birds.bae3afff.svg": "/InMediaProgrammTest/static/media/birds.bae3afff.svg",
-    "static/media/birdseEnd.dc218958.svg": "/InMediaProgrammTest/static/media/birdseEnd.dc218958.svg"
+    "static/media/birdseEnd.dc218958.svg": "/InMediaProgrammTest/static/media/birdseEnd.dc218958.svg",
+    "static/media/filesicon.81325f84.svg": "/InMediaProgrammTest/static/media/filesicon.81325f84.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a28ef768.js",
-    "static/js/2.80a17425.chunk.js",
+    "static/js/2.20c5fe73.chunk.js",
     "static/css/main.a51da1bd.chunk.css",
-    "static/js/main.6e2d530a.chunk.js"
+    "static/js/main.afa6edee.chunk.js"
   ]
 }
