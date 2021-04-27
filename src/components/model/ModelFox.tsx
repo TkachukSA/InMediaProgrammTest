@@ -1,4 +1,4 @@
-import React, {Suspense, useRef} from 'react'
+import React, {Suspense, useEffect, useRef, useState} from 'react'
 import {Canvas, useFrame, useLoader} from '@react-three/fiber'
 import {Html} from '@react-three/drei'
 import {OBJLoader} from "three/examples/jsm/loaders/OBJLoader";
@@ -38,7 +38,19 @@ function Model(props: any) {
 }
 
 function Bust({url}: { url: string }) {
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
+    const updateDimensions = () => {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+    }
+    useEffect(() => {
+        window.addEventListener("resize", updateDimensions);
+        return () => window.removeEventListener("resize", updateDimensions);
+    }, [width, height, ]);
 
     const fbx = useLoader(OBJLoader, url);
-    return <primitive scale={[0.009, 0.009, 0.009]} object={fbx}/>
+    let screenMobile = [0.005, 0.005, 0.005]
+    let screen = [0.009, 0.009, 0.009]
+    return <primitive scale={width > 570 ? screen : screenMobile} object={fbx}/>
 }

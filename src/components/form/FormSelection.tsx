@@ -14,7 +14,6 @@ export default function FormSelection() {
     const [sizeRows, setSizeRows] = useState(1);
     const [files, setFiles] = useState<Array<any>>([]);
 
-
     const onChangeValue = (e: ChangeEvent<HTMLInputElement>) => {
         const value = e.currentTarget.value
         setValue(value)
@@ -38,11 +37,11 @@ export default function FormSelection() {
 
 
     let onChangeFile = (e: ChangeEvent<HTMLInputElement>) => {
-        let file = e.currentTarget.files
-        let filesArr = []
-        filesArr.push(file)
-        setFiles([...files, ...filesArr])
-
+        if (e.currentTarget.files) {
+            let file = e.currentTarget.files[0]
+            let contact = files.concat(file)
+            setFiles(contact)
+        }
     }
 
     return (
