@@ -12,7 +12,7 @@ export default function FormSelection() {
     const [error, setError] = useState<boolean>(false);
     const [text, setText] = useState('');
     const [sizeRows, setSizeRows] = useState(1);
-    const [files, setFiles] = useState<any>([]);
+    const [files, setFiles] = useState<Array<any>>([]);
 
 
     const onChangeValue = (e: ChangeEvent<HTMLInputElement>) => {
@@ -26,7 +26,7 @@ export default function FormSelection() {
         }
     }
 
-    const onChangeText = (e) => {
+    const onChangeText = (e: ChangeEvent<HTMLTextAreaElement>) => {
         setText(e.currentTarget.value)
         if (text.length > 35) {
             setSizeRows(2)
@@ -37,9 +37,10 @@ export default function FormSelection() {
     }
 
 
-    let onChangeFile = (e) => {
+    let onChangeFile = (e: ChangeEvent<HTMLInputElement>) => {
         let file = e.currentTarget.files
-        let filesArr = [...file]
+        let filesArr = []
+        filesArr.push(file)
         setFiles([...files, ...filesArr])
 
     }
