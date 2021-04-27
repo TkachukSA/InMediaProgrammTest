@@ -18,7 +18,7 @@ export default function Card() {
                 <Tilt className="Tilt" options={{max: 45, reverse: true, speed: 1000}}>
                     <div className={style.cardContainer}>
                         <div className={style.image}>
-                            <img alt={'background image'} src={union}/>
+                            <img alt={''} src={union}/>
                         </div>
                         <div className={style.titleCard}>
                             <span>Интерактивная карточка</span>
